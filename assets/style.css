@@ -1,0 +1,127 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family= Oswald :wght@200;300;400;500;600;700 & display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald';
+}
+
+body {
+    background-image: url(../imagens/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+}
+
+.container-nav {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background-color: rgba(0, 0, 0, .5);
+
+}
+
+.container-nav ul li{
+    display: inline-flex;
+    list-style: none;
+    font-size: 25px;
+    padding: 0 35px;
+    font-weight: bolder;
+}
+
+ul li:hover {
+    color: rgb(248, 237, 78);
+    transition: 0.5s ease-in;
+    cursor: pointer;
+    border-radius: 12px;
+    margin: 5px 5px;
+    font-size: 35px;
+    backdrop-filter: blur(10px);
+}
+
+.titulo h1{
+    display: flex;
+    color: white;
+    padding-top: 150px;
+    margin-left: 150px;
+    font-size: 35px;
+    font-weight: bolder;
+    text-align: center;
+    animation: animationtittle 3s;
+}
+
+@keyframes animationtittle {
+    from {
+        margin-left: -800px;
+    }
+
+    to {
+        margin-left: 150px
+    }
+
+}
+.containerlogo {
+    display: flex;
+    width: 300px;
+    height: 270px;
+    margin-left: 230px;
+    margin-top: -75px;
+    animation: logo 3s ease-in-out;
+}
+
+@keyframes logo {
+    from {
+        margin-left: -800px;
+    }
+
+    to {
+        margin-left: 230px
+    }
+
+}
+
+.artigo {
+    color: white;
+    background-color: rgba(0, 0, 0, .5);
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: 10px;
+    margin-top: -75px;
+    font-size: 18px;
+    width: 40%;
+    text-align: left;
+    animation: artigo 5s ;
+}
+
+.artigo:hover {
+    color: rgb(255, 251, 1);
+    background-color: rgba(0, 0, 0, .5);
+    border-radius: 15px;
+    padding: 10px;
+    margin-left: 10px;
+    margin-top: -75px;
+    font-size: 20px;
+    width: 40%;
+    text-align: left;
+    cursor: pointer;
+    transition: 2s;
+
+}
+
+@keyframes artigo {
+    from {
+        margin-left: -800px;
+    }
+
+    to {
+        margin-left: 10px
+    }
+
+}
+
